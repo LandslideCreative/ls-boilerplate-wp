@@ -9,7 +9,6 @@
 			padding-top: 0;
 		}
 	}
-
 	// White background
 	&.white-bg {
 		background-color: $white;
@@ -85,5 +84,15 @@
 				left: 0;
 			}
 		}
+	}
+}
+
+.possibility {
+	button {
+		background: $black;
+		color: $white;
+		display: block;
+		width: 300px;
+		height: 30px;
 	}
 }

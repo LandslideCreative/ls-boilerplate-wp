@@ -257,6 +257,40 @@ function ls_boilerplate_remove_user_social( $contactmethods )
     return $contactmethods;
 }
 
+// ACF CUSTOMIZATION
+
+function acf_image_width( $field ) {
+    $i_width = '40';
+    if(empty($field['wrapper']['width'])) {
+         $field['wrapper']['width'] = $i_width;
+    }
+    return $field;
+}
+function my_acf_input_admin_head() { ?>
+    <script type="text/javascript">
+    jQuery(function($){
+    $('.acf-postbox').addClass('closed');
+    $('.acf-input .layout').addClass('-collapsed');
+    });
+    </script>
+<?php }
+
+// STICKY NAV
+function sticky_nav() { 
+    // 1 = true 0 = false
+   $sticky = 1;
+    if($sticky == 1) {
+        echo '<div class="sticky-nav">';
+            get_template_part('partials/main','nav');
+        echo '</div>';
+    }
+    elseif($sticky == 0) {
+        echo '<div class="normal-nav">';
+            get_template_part('partials/main','nav');
+        echo'</div>';
+    }
+}
+
 /*------------------------------------*\
     Actions + Filters + ShortCodes
 \*------------------------------------*/

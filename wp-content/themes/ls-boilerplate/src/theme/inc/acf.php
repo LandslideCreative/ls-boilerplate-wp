@@ -57,6 +57,11 @@ function acf_modify_styles() {
             background-color: #ffffff;
             border: 1px solid #ccd0d4;
         }
+        .acf-input .layout .acf-fc-layout-handle{background: #ccc;}
+        .acf-input .layout.-collapsed .acf-fc-layout-handle{background: transparent;}
+        .acf-input .layout .acf-fc-layout-handle span.acf-fc-layout-order {background-color: #ff0000;}
+        .acf-input .layout.-collapsed .acf-fc-layout-handle span.acf-fc-layout-order {background-color: #555d66;}
+        .acf-postbox:not(.closed) .postbox-header {background: #ccc;}
     </style>
     <?php    
     

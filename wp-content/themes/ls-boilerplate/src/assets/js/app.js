@@ -41,6 +41,27 @@ $(document).ready(function() {
 		}
 	});
 
+	// EXPANDABLE CONTENT
+	$('.expandable-content .expand-question').click(function(event) {
+		event.stopPropagation();
+		event.preventDefault();
+		if ($(this).hasClass('expand-open')) {
+			$(this).parent().find('.expand-answer').slideUp(200);
+			$(this).removeClass('expand-open');
+		} else {
+			$(this).parent().find('.expand-answer').slideDown(200);
+			$(this).addClass('expand-open');
+		}
+	});
+
+	// STICKY HEADER
+	$(window).scroll(function(){
+		var sticky = $('.sticky-nav'),
+			scroll = $(window).scrollTop();
+		if (scroll >= 100) sticky.addClass('scroll');
+		else sticky.removeClass('scroll');
+	});
+
 	$('.alert-bar .close-button').click( function(){
         $(this).parent().slideUp('fast');
     });
