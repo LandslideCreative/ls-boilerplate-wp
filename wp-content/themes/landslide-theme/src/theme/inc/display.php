@@ -221,7 +221,7 @@ function ls_sticky_nav( $position='' ) {
 		if( $position=='container' ) {
 			echo 'data-sticky-container';
 		} else {
-			echo 'data-sticky data-margin-top="0"';
+			echo 'data-sticky data-margin-top="0" data-sticky-on="small"';
 		}
 	}
 
