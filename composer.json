@@ -38,21 +38,21 @@
     "prefer-stable" : true,
     "require": {
           "landslidecreative/advanced-custom-fields-pro" : "6.1.6",
-          "wpackagist-plugin/akismet" : "5.1",
+          "wpackagist-plugin/akismet" : "5.2",
           "wpackagist-plugin/classic-editor" : "1.6.3",
           "wpackagist-plugin/duplicate-post" : "4.5",
-          "landslidecreative/gravityforms" : "2.7.7",
+          "landslidecreative/gravityforms" : "2.7.8",
           "wpackagist-plugin/imagify" : "2.1.1",
           "wpackagist-plugin/intuitive-custom-post-order" : "3.1.4.1",
           "wpackagist-plugin/query-monitor" : "3.12.3",
-          "wpackagist-plugin/safe-redirect-manager" : "1.11.1",
+          "wpackagist-plugin/safe-redirect-manager" : "2.0.1",
           "wpackagist-plugin/svg-support" : "2.5.5",
           "wpackagist-plugin/user-switching" : "1.7.0",
-          "wpackagist-plugin/wordfence" : "7.9.2",
+          "wpackagist-plugin/wordfence" : "7.10.0",
           "wpackagist-plugin/wp-crontrol" : "1.15.2",
-          "landslidecreative/wp-migrate-db-pro" : "2.6.7",
-          "landslidecreative/wp-rocket" : "3.13.3",
-          "wpackagist-plugin/wordpress-seo" : "20.8"
+          "landslidecreative/wp-migrate-db-pro" : "2.6.8",
+          "landslidecreative/wp-rocket" : "3.14.0",
+          "wpackagist-plugin/wordpress-seo" : "20.9"
     },
     "config": {
         "allow-plugins": {
