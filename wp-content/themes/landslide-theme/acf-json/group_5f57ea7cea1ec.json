@@ -225,7 +225,7 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
@@ -309,7 +309,7 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
@@ -746,6 +746,42 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_64c0055038718": {
+                    "key": "layout_64c0055038718",
+                    "name": "global_section",
+                    "label": "Global Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64c0055f3871a",
+                            "label": "Global Section",
+                            "name": "global_section",
+                            "aria-label": "",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "ls-global-section"
+                            ],
+                            "post_status": [
+                                "publish"
+                            ],
+                            "taxonomy": "",
+                            "return_format": "object",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -760,6 +796,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "ls-global-section"
+            }
         ]
     ],
     "menu_order": 5,
@@ -771,5 +814,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1667975325
+    "modified": 1691436075
 }

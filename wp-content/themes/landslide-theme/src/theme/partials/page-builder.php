@@ -214,6 +214,22 @@ if( have_rows('page_builder') ):
 					</div>
 				</div>
 			</section>
+
+		<?php // Global sections
+		elseif( get_row_layout() == 'global_section' ):
+			$current_post = get_the_ID();
+
+			$global_section = get_sub_field('global_section');
+			if( $global_section ) {
+				$post = $global_section;
+				setup_postdata( $post );
+
+				get_template_part('partials/page', 'builder');
+			}
+			
+			$post = get_post( $current_post );
+			setup_postdata( $post );
+			?>
 		
 		<?php /* // Page Specific Content (Needs to be added to custom fields)
 		elseif( get_row_layout() == 'page_specific_content' ):
