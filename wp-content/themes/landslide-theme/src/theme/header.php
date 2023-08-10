@@ -37,6 +37,6 @@
 					</div>
 				<?php } ?>
 
-				<?php get_template_part('partials/page', 'navigation'); ?>
+				<?php get_template_part('partials/header/navigation'); ?>
 
 			</header>

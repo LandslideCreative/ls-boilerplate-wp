@@ -24,7 +24,7 @@
 
 						// Posts from Author
 						while (have_posts()) : the_post();
-							get_template_part('partials/post', 'list-item');
+							get_template_part('partials/posts/list', 'item');
 						endwhile; ?>
 					</div>
 					<?php if( $wp_query->max_num_pages > 1 ) { ?>

@@ -28,7 +28,7 @@
 							</div>
 
 							<div class="cell medium-4 footer-social">
-								<?php get_template_part('partials/footer', 'social'); ?>
+								<?php get_template_part('partials/footer/social'); ?>
 							</div>
 						</div>
 					</div>
