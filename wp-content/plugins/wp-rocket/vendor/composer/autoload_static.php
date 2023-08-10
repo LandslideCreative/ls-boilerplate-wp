@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb077b0f5fa427a7c0aa75aab77aeb698
+class ComposerStaticInitbbb894d0e9ca36c5bba62245f501f294
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -382,6 +382,8 @@ class ComposerStaticInitb077b0f5fa427a7c0aa75aab77aeb698
         'WP_Rocket\\Engine\\Optimization\\DynamicLists\\DelayJSLists\\APIClient' => __DIR__ . '/../..' . '/inc/Engine/Optimization/DynamicLists/DelayJSLists/APIClient.php',
         'WP_Rocket\\Engine\\Optimization\\DynamicLists\\DelayJSLists\\DataManager' => __DIR__ . '/../..' . '/inc/Engine/Optimization/DynamicLists/DelayJSLists/DataManager.php',
         'WP_Rocket\\Engine\\Optimization\\DynamicLists\\DynamicLists' => __DIR__ . '/../..' . '/inc/Engine/Optimization/DynamicLists/DynamicLists.php',
+        'WP_Rocket\\Engine\\Optimization\\DynamicLists\\IncompatiblePluginsLists\\APIClient' => __DIR__ . '/../..' . '/inc/Engine/Optimization/DynamicLists/IncompatiblePluginsLists/APIClient.php',
+        'WP_Rocket\\Engine\\Optimization\\DynamicLists\\IncompatiblePluginsLists\\DataManager' => __DIR__ . '/../..' . '/inc/Engine/Optimization/DynamicLists/IncompatiblePluginsLists/DataManager.php',
         'WP_Rocket\\Engine\\Optimization\\DynamicLists\\ServiceProvider' => __DIR__ . '/../..' . '/inc/Engine/Optimization/DynamicLists/ServiceProvider.php',
         'WP_Rocket\\Engine\\Optimization\\DynamicLists\\Subscriber' => __DIR__ . '/../..' . '/inc/Engine/Optimization/DynamicLists/Subscriber.php',
         'WP_Rocket\\Engine\\Optimization\\GoogleFonts\\AbstractGFOptimization' => __DIR__ . '/../..' . '/inc/Engine/Optimization/GoogleFonts/AbstractGFOptimization.php',
@@ -563,10 +565,10 @@ class ComposerStaticInitb077b0f5fa427a7c0aa75aab77aeb698
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb077b0f5fa427a7c0aa75aab77aeb698::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb077b0f5fa427a7c0aa75aab77aeb698::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb077b0f5fa427a7c0aa75aab77aeb698::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb077b0f5fa427a7c0aa75aab77aeb698::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbbb894d0e9ca36c5bba62245f501f294::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbbb894d0e9ca36c5bba62245f501f294::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitbbb894d0e9ca36c5bba62245f501f294::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitbbb894d0e9ca36c5bba62245f501f294::$classMap;
 
         }, null, ClassLoader::class);
     }

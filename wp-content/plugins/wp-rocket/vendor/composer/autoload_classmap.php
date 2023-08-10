@@ -336,6 +336,8 @@ return array(
     'WP_Rocket\\Engine\\Optimization\\DynamicLists\\DelayJSLists\\APIClient' => $baseDir . '/inc/Engine/Optimization/DynamicLists/DelayJSLists/APIClient.php',
     'WP_Rocket\\Engine\\Optimization\\DynamicLists\\DelayJSLists\\DataManager' => $baseDir . '/inc/Engine/Optimization/DynamicLists/DelayJSLists/DataManager.php',
     'WP_Rocket\\Engine\\Optimization\\DynamicLists\\DynamicLists' => $baseDir . '/inc/Engine/Optimization/DynamicLists/DynamicLists.php',
+    'WP_Rocket\\Engine\\Optimization\\DynamicLists\\IncompatiblePluginsLists\\APIClient' => $baseDir . '/inc/Engine/Optimization/DynamicLists/IncompatiblePluginsLists/APIClient.php',
+    'WP_Rocket\\Engine\\Optimization\\DynamicLists\\IncompatiblePluginsLists\\DataManager' => $baseDir . '/inc/Engine/Optimization/DynamicLists/IncompatiblePluginsLists/DataManager.php',
     'WP_Rocket\\Engine\\Optimization\\DynamicLists\\ServiceProvider' => $baseDir . '/inc/Engine/Optimization/DynamicLists/ServiceProvider.php',
     'WP_Rocket\\Engine\\Optimization\\DynamicLists\\Subscriber' => $baseDir . '/inc/Engine/Optimization/DynamicLists/Subscriber.php',
     'WP_Rocket\\Engine\\Optimization\\GoogleFonts\\AbstractGFOptimization' => $baseDir . '/inc/Engine/Optimization/GoogleFonts/AbstractGFOptimization.php',

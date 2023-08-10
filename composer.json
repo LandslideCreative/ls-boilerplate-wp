@@ -37,22 +37,22 @@
     "minimum-stability": "dev",
     "prefer-stable" : true,
     "require": {
-          "landslidecreative/advanced-custom-fields-pro" : "6.1.7",
+          "landslidecreative/advanced-custom-fields-pro" : "6.2.0",
           "wpackagist-plugin/akismet" : "5.2",
           "wpackagist-plugin/classic-editor" : "1.6.3",
           "wpackagist-plugin/duplicate-post" : "4.5",
-          "landslidecreative/gravityforms" : "2.7.10",
+          "landslidecreative/gravityforms" : "2.7.12",
           "wpackagist-plugin/imagify" : "2.1.1",
           "wpackagist-plugin/intuitive-custom-post-order" : "3.1.4.1",
           "wpackagist-plugin/query-monitor" : "3.13.1",
           "wpackagist-plugin/safe-redirect-manager" : "2.0.1",
           "wpackagist-plugin/svg-support" : "2.5.5",
           "wpackagist-plugin/user-switching" : "1.7.0",
-          "wpackagist-plugin/wordfence" : "7.10.2",
+          "wpackagist-plugin/wordfence" : "7.10.3",
           "wpackagist-plugin/wp-crontrol" : "1.15.3",
           "landslidecreative/wp-migrate-db-pro" : "2.6.9",
-          "landslidecreative/wp-rocket" : "3.14.2",
-          "wpackagist-plugin/wordpress-seo" : "20.11"
+          "landslidecreative/wp-rocket" : "3.14.3",
+          "wpackagist-plugin/wordpress-seo" : "20.13"
     },
     "config": {
         "allow-plugins": {
