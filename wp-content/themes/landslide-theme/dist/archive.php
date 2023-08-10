@@ -6,8 +6,12 @@
 			<div class="grid-x grid-padding-x align-center">
 				<div class="medium-10 large-8 cell">
 					<?php get_template_part('loop'); ?>
-					<?php get_template_part('pagination'); ?>
 				</div>
+				<?php if( $wp_query->max_num_pages > 1 ) { ?>
+					<div class="medium-10 large-8 cell">
+						<?php get_template_part('pagination'); ?>
+					</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>

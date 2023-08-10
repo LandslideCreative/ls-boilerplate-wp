@@ -64,13 +64,11 @@
 
 // Pagination
 .pagination {
-	display: flex;
-	justify-content: space-between;
+	@include vertical-margin(.5, true, false);
+	display: block;
 	text-align: center;
-	@include breakpoint(medium) {
-		display: block;
-		position: relative;
-	}
+	width: 100%;
+	position: relative;
 	.page-numbers {
 		display: none;
 		text-align: center;
@@ -91,7 +89,8 @@
 			padding: 0 5px;
 		}
 		&.next {
-			display: inline-block;
+			display: block;
+			float: right;
 			width: auto;
 			padding: 0 10px;
 			background-color: $primary-color;
@@ -99,10 +98,12 @@
 			@include breakpoint(medium) {
 				position: absolute;
 				right: 0;
+				top: 0;
 			}
 		}
 		&.prev {
 			display: inline-block;
+			float: left;
 			width: auto;
 			padding: 0 10px;
 			background-color: $primary-color;
@@ -110,6 +111,7 @@
 			@include breakpoint(medium) {
 				position: absolute;
 				left: 0;
+				top: 0;
 			}
 		}
 	}
