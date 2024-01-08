@@ -7,7 +7,7 @@ namespace Composer\Autoload;
 use Composer\AutoloadWPMediaImagifyWordPressPlugin\ClassLoader as ClassLoaderWPMediaImagifyWordPressPlugin;
 
 
-class ComposerStaticInit4ba6376c0ffc3020053ab8c93bad1e1e
+class ComposerStaticInit49a1cdf8dc57f57539cd34f9d3c0eac1
 {
     public static $prefixLengthsPsr4 = array (
         'I' => 
@@ -115,7 +115,7 @@ class ComposerStaticInit4ba6376c0ffc3020053ab8c93bad1e1e
         'Imagify_Regenerate_Thumbnails_Deprecated' => __DIR__ . '/../..' . '/inc/deprecated/classes/class-imagify-regenerate-thumbnails-deprecated.php',
         'Imagify_Requirements' => __DIR__ . '/../..' . '/inc/classes/class-imagify-requirements.php',
         'Imagify_Settings' => __DIR__ . '/../..' . '/inc/classes/class-imagify-settings.php',
-        'Imagify_User' => __DIR__ . '/../..' . '/inc/classes/class-imagify-user.php',
+        'Imagify_User' => __DIR__ . '/../..' . '/inc/deprecated/classes/class-imagify-user.php',
         'Imagify_Views' => __DIR__ . '/../..' . '/inc/classes/class-imagify-views.php',
         'Imagify_WP_Async_Request' => __DIR__ . '/../..' . '/inc/classes/Dependencies/deliciousbrains/wp-background-processing/classes/wp-async-request.php',
         'Imagify_WP_Background_Process' => __DIR__ . '/../..' . '/inc/classes/Dependencies/deliciousbrains/wp-background-processing/classes/wp-background-process.php',
@@ -124,9 +124,9 @@ class ComposerStaticInit4ba6376c0ffc3020053ab8c93bad1e1e
     public static function getInitializer(ClassLoaderWPMediaImagifyWordPressPlugin $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4ba6376c0ffc3020053ab8c93bad1e1e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4ba6376c0ffc3020053ab8c93bad1e1e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit4ba6376c0ffc3020053ab8c93bad1e1e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit49a1cdf8dc57f57539cd34f9d3c0eac1::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit49a1cdf8dc57f57539cd34f9d3c0eac1::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit49a1cdf8dc57f57539cd34f9d3c0eac1::$classMap;
 
         }, null, ClassLoaderWPMediaImagifyWordPressPlugin::class);
     }

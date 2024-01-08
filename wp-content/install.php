@@ -205,6 +205,7 @@ function wp_install_defaults( $user_id ) {
     	'gravityformsakismet/akismet.php',
     	'classic-editor/classic-editor.php',
     	'imagify/imagify.php',
+    	'intuitive-custom-post-order/intuitive-custom-post-order.php',
     	'safe-redirect-manager/safe-redirect-manager.php',
     	'svg-support/svg-support.php',
     	'wordpress-seo/wp-seo.php',

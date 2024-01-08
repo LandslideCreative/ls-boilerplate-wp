@@ -16,7 +16,13 @@ function rocket_admin_bar( $wp_admin_bar ) {
 	global $pagenow, $post;
 
 	if ( ! empty( $_SERVER['REQUEST_URI'] ) ) {
-		$referer = filter_var( wp_unslash( $_SERVER['REQUEST_URI'] ), FILTER_SANITIZE_URL );
+		$uri = filter_var( wp_unslash( $_SERVER['REQUEST_URI'], FILTER_SANITIZE_URL ) );
+		/**
+		 * Filters to act on the referer url for the admin bar.
+		 *
+		 * @param string $uri Current uri
+		 */
+		$referer = (string) apply_filters( 'rocket_admin_bar_referer', esc_url( $uri ) );
 		$referer = '&_wp_http_referer=' . rawurlencode( remove_query_arg( 'fl_builder', $referer ) );
 	} else {
 		$referer = '';
@@ -85,6 +91,8 @@ function rocket_admin_bar( $wp_admin_bar ) {
 					]
 				);
 
+				$langlinks_default = [];
+
 				// Add submenu for each active langs.
 				switch ( $i18n_plugin ) {
 					case 'wpml':
@@ -100,7 +108,16 @@ function rocket_admin_bar( $wp_admin_bar ) {
 						$langlinks = get_rocket_polylang_langs_for_admin_bar();
 						break;
 					default:
-						$langlinks = [];
+						/**
+						 * Filters the value of the lang links menu
+						 *
+						 * @param array $langlinks Array of languages.
+						 */
+						$langlinks = apply_filters( 'rocket_i18n_admin_bar_menu', [] );
+
+						if ( ! is_array( $langlinks ) ) {
+							$langlinks = $langlinks_default;
+						}
 				}
 
 				if ( $langlinks ) {
